@@ -6,7 +6,7 @@ ID number to classed object framework
     package MasterInstance;
     my $master = MasterInstance->newInstance;
     my $object = instanceObject($id);
-    print "$id is ".ref($object)."\n";
+    print ref($object)."\n";
 
 Due to the default classifyObjectID, the above example will print "Odd\n" for odd $id and "Even\n" for even $id.
 
