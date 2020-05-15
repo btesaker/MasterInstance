@@ -2,6 +2,7 @@
 ID number to classed object framework
 
 ## Synopsis
+
     package MasterInstance;
     my $master = MasterInstance->newInstance;
     my $object = instanceObject($id);
@@ -11,6 +12,7 @@ Due to the default classifyObjectID, the above example will print "Odd\n" for od
 
 ## Typical usage
 This package is typically subclassed for a database frontend. The classifyObjectID() is overloaded to return correct class for a given ID.
+
     package HomeDB;
     use parent qw(MasterInstance);
     sub classifyObjectID { 
